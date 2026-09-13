@@ -42,8 +42,8 @@ function AboutPage() {
               <span className="font-bold text-purple">{profile.location}</span>.
             </p>
             <p className="mt-3">
-              I am currently a Computer Science and Engineering student at B.P. Poddar Institute of Management &amp;
-              Technology, focused on Machine Learning, Deep Learning and Large Language Models.
+              I am a Computer Science and Engineering graduate, focused on Machine Learning, Deep Learning, and Large
+              Language Models.
             </p>
             <p className="mt-3">Apart from coding, some other activities that I love to do:</p>
             <ul className="mt-3 space-y-1.5">
