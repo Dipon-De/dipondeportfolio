@@ -6,12 +6,9 @@ import bitcoinImg from "@/assets/project-bitcoin.jpg";
 export const profile = {
   name: "Dipon De",
   location: "Kolkata, India",
-  // email: "iamdiponde@gmail.com",
-  // phone: "+91-8016829344",
   github: "https://github.com/Dipon-De",
   githubUser: "Dipon-De",
   linkedin: "https://www.linkedin.com/in/dipon-de-2a9570256/",
-  // instagram: "https://www.instagram.com/",
   roles: ["Machine Learning Engineer", "Deep Learning Engineer", "LLM / GenAI Developer", "Full-Stack Developer"],
   summary:
     "Computer Science and Engineering graduate specializing in Machine Learning, Deep Learning, and Large Language Models. Experience fine-tuning LLMs (BioGPT), building real-time anomaly detection systems, and developing deep learning solutions for medical image analysis. Oracle Certified Professional, proficient in Python, PyTorch, and TensorFlow, focused on solving real-world problems with AI.",
@@ -156,28 +153,32 @@ export const certifications = [
     title: "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
     issuer: "Oracle",
     date: "Aug 2025",
-    verify: "#",
+    verify:
+      "https://catalog-education.oracle.com/ords/certview/sharebadge?id=8DC059AD9440FEF70C9B7AE5D09C48E5B801983F689155B7A4A02F225C835FB5",
     pdf: "/assets/certs/developer.pdf",
   },
   {
     title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
     issuer: "Oracle",
     date: "Sept 2025",
-    verify: "#",
+    verify:
+      "https://catalog-education.oracle.com/ords/certview/sharebadge?id=D63567F61E813D007EFBF54B602B1C1168B95D2EB46DDA100634E4A4BD1FD47F",
     pdf: "/assets/certs/data-science.pdf",
   },
   {
     title: "Oracle Cloud Infrastructure 2025 Certified Networking Professional",
     issuer: "Oracle",
     date: "Sept 2025",
-    verify: "#",
+    verify:
+      "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7001CCE34F1A00FA64D9D661FD9FC36CB16A9ACE8B83003C734362A0CD7470C0",
     pdf: "/assets/certs/networking.pdf",
   },
   {
     title: "Oracle AI Vector Search Certified Professional",
     issuer: "Oracle",
     date: "Sept 2025",
-    verify: "#",
+    verify:
+      "https://catalog-education.oracle.com/ords/certview/sharebadge?id=11F6405C4612A06F1341D1292292F9DDDFFEB9E6A26E641648453B47B60DCBEC",
     pdf: "/assets/certs/ai-vector-search.pdf",
   },
 ];
