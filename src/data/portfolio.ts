@@ -190,7 +190,7 @@ export const publications = [
     authors: "Dipon De",
     venue: "IEEE",
     date: "Published Feb 2026",
-    link: "#",
+    link: "https://ieeexplore.ieee.org/document/11364799",
   },
 ];
 
