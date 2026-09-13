@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { toast } from "sonner";
 
-const ACCESS_KEY = import.meta.env["VITE_WEB3FORMS_ACCESS_KEY"] as string | undefined;
+const ACCESS_KEY =
+  (import.meta.env["WEB3FORMS_ACCESS_KEY"] as string | undefined) ||
+  (import.meta.env["VITE_WEB3FORMS_ACCESS_KEY"] as string | undefined);
 
 export function ContactForm() {
   const [sending, setSending] = useState(false);

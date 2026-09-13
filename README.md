@@ -30,10 +30,10 @@ Copy `.env.example` to `.env` and fill in:
 
 | Variable | Purpose |
 | --- | --- |
-| `VITE_WEB3FORMS_ACCESS_KEY` | Access key from [web3forms.com](https://web3forms.com) — required for the contact form to deliver email. |
+| `WEB3FORMS_ACCESS_KEY` | Access key from [web3forms.com](https://web3forms.com) — required for the contact form to deliver email. |
 | `VITE_SITE_URL` | Public URL of the deployed site, used in metadata. |
 
-Both are client-side (`VITE_` prefixed) values; the Web3Forms access key is designed to be public.
+`WEB3FORMS_ACCESS_KEY` is client-side and designed to be public; `VITE_WEB3FORMS_ACCESS_KEY` is also accepted as a fallback.
 
 ## Build
 

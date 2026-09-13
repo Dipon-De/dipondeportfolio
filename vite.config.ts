@@ -12,4 +12,9 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    // Expose both VITE_ prefixed vars and Web3Forms vars to the client bundle
+    // so the contact form can read the access key from Lovable secrets or Vercel/Netlify envs.
+    envPrefix: ["VITE_", "WEB3FORMS_"],
+  },
 });
