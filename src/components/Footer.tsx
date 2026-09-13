@@ -1,4 +1,4 @@
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin /*, AiFillInstagram, AiOutlineMail */ } from "react-icons/ai";
 import { ContactForm } from "./ContactForm";
 import { Reveal } from "./Reveal";
 import { profile } from "@/data/portfolio";
@@ -18,6 +18,7 @@ export function Footer() {
             get back to you.
           </p>
           <ul className="mt-6 space-y-2 text-sm">
+            {/*
             <li>
               <a
                 href={`mailto:${profile.email}`}
@@ -27,6 +28,7 @@ export function Footer() {
               </a>
             </li>
             <li className="text-muted-foreground">{profile.phone}</li>
+            */}
             <li className="text-muted-foreground">{profile.location}</li>
           </ul>
           <div className="mt-6 flex gap-3">
@@ -48,6 +50,7 @@ export function Footer() {
             >
               <AiFillLinkedin aria-hidden />
             </a>
+            {/*
             <a
               href={profile.instagram}
               target="_blank"
@@ -57,6 +60,7 @@ export function Footer() {
             >
               <AiFillInstagram aria-hidden />
             </a>
+            */}
           </div>
         </Reveal>
 
