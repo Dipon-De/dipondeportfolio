@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AiOutlineFilePdf } from "react-icons/ai";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { PageSection, Reveal } from "@/components/Reveal";
 import { certifications } from "@/data/portfolio";
@@ -49,14 +50,21 @@ function CertificationsPage() {
                 </div>
               </div>
               <h2 className="mt-4 flex-1 text-base font-bold leading-snug">{c.title}</h2>
-              <a
-                href={c.verify}
-                target={c.verify === "#" ? undefined : "_blank"}
-                rel="noreferrer noopener"
-                className="btn-purple mt-5 self-start text-sm"
-              >
-                <BsPatchCheckFill aria-hidden /> Verify
-              </a>
+              <div className="mt-5 flex flex-wrap gap-2 self-start">
+                {c.pdf && (
+                  <a href={c.pdf} target="_blank" rel="noreferrer noopener" className="btn-purple text-sm">
+                    <AiOutlineFilePdf aria-hidden /> View
+                  </a>
+                )}
+                <a
+                  href={c.verify}
+                  target={c.verify === "#" ? undefined : "_blank"}
+                  rel="noreferrer noopener"
+                  className="btn-purple text-sm"
+                >
+                  <BsPatchCheckFill aria-hidden /> Verify
+                </a>
+              </div>
             </li>
           </Reveal>
         ))}

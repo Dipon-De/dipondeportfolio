@@ -97,6 +97,21 @@ function AboutPage() {
                     </li>
                   ))}
                 </ul>
+                {e.pdfs && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {e.pdfs.map((doc) => (
+                      <a
+                        key={doc.url}
+                        href={doc.url}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="btn-purple text-xs"
+                      >
+                        <AiOutlineFilePdf aria-hidden /> {doc.label}
+                      </a>
+                    ))}
+                  </div>
+                )}
               </article>
             </Reveal>
           ))}
