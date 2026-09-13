@@ -12,12 +12,7 @@ export const profile = {
   githubUser: "Dipon-De",
   linkedin: "https://www.linkedin.com/in/dipon-de-2a9570256/",
   // instagram: "https://www.instagram.com/",
-  roles: [
-    "Machine Learning Engineer",
-    "Deep Learning Engineer",
-    "LLM / GenAI Developer",
-    "Full-Stack Developer",
-  ],
+  roles: ["Machine Learning Engineer", "Deep Learning Engineer", "LLM / GenAI Developer", "Full-Stack Developer"],
   summary:
     "Computer Science and Engineering graduate specializing in Machine Learning, Deep Learning, and Large Language Models. Experience fine-tuning LLMs (BioGPT), building real-time anomaly detection systems, and developing deep learning solutions for medical image analysis. Oracle Certified Professional, proficient in Python, PyTorch, and TensorFlow, focused on solving real-world problems with AI.",
   tagline: "Restart. Reset. Refocus.",
@@ -102,16 +97,7 @@ export const projects: Project[] = [
       "EfficientNetV2-S + CBAM model with automated ROI extraction reaching 99.15% accuracy on ultrasound imaging.",
     full: "EfficientNetV2-S + CBAM deep learning model with automated ROI extraction, transfer learning, augmentation, two-stage fine-tuning. 99.15% accuracy, 99.73% sensitivity, 98.49% specificity on 1,413 test images, with Grad-CAM explainability.",
     tags: ["Deep Learning", "Computer Vision", "Medical AI"],
-    tech: [
-      "Python",
-      "PyTorch",
-      "EfficientNetV2-S",
-      "CBAM",
-      "OpenCV",
-      "Scikit-learn",
-      "NumPy",
-      "Grad-CAM",
-    ],
+    tech: ["Python", "PyTorch", "EfficientNetV2-S", "CBAM", "OpenCV", "Scikit-learn", "NumPy", "Grad-CAM"],
     github: "#",
   },
   {
@@ -129,8 +115,7 @@ export const projects: Project[] = [
     slug: "biogpt-lora",
     title: "Large Language Models for Medical Purpose (BioGPT + LoRA)",
     image: biogptImg,
-    short:
-      "Biomedical question-answering system built by fine-tuning BioGPT with LoRA for 40% better performance.",
+    short: "Biomedical question-answering system built by fine-tuning BioGPT with LoRA for 40% better performance.",
     full: "Fine-tuned BioGPT with LoRA for a biomedical QA system; 40% performance gain, 75% less VRAM, CPU-compatible via float32 config.",
     tags: ["LLM", "NLP", "GenAI"],
     tech: ["Python", "PyTorch", "Hugging Face", "LoRA", "BioGPT"],
@@ -140,8 +125,7 @@ export const projects: Project[] = [
     slug: "bitcoin-forecasting",
     title: "Bitcoin Price Forecasting & Trading Strategy Backtesting",
     image: bitcoinImg,
-    short:
-      "Stacked LSTM forecasting 30-minute BTC prices, backtested into a strategy with 139.92% simulated ROI.",
+    short: "Stacked LSTM forecasting 30-minute BTC prices, backtested into a strategy with 139.92% simulated ROI.",
     full: "Stacked LSTM network forecasting 30-minute BTC prices; backtested trading strategy achieved 139.92% simulated ROI.",
     tags: ["Machine Learning", "Time Series"],
     tech: ["LSTM", "Keras", "TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Matplotlib"],
@@ -164,7 +148,8 @@ export const certifications = [
     title: "Oracle Cloud Infrastructure 2025 Certified Generative AI Professional",
     issuer: "Oracle",
     date: "Aug 2025",
-    verify: "#",
+    verify:
+      "https://catalog-education.oracle.com/ords/certview/sharebadge?id=591D0576096FEA953CB186756F6E77B044843DD9ED8B1508A305868391248610",
     pdf: "/assets/certs/generative-ai.pdf",
   },
   {
