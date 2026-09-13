@@ -7,9 +7,7 @@ import { PageSection, Reveal } from "@/components/Reveal";
 import { SkillGrid } from "@/components/SkillGrid";
 import { coursework, education, experience, profile } from "@/data/portfolio";
 
-const GitHubCalendar = lazy(() =>
-  import("react-github-calendar").then((m) => ({ default: m.GitHubCalendar })),
-);
+const GitHubCalendar = lazy(() => import("react-github-calendar").then((m) => ({ default: m.GitHubCalendar })));
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -44,9 +42,8 @@ function AboutPage() {
               <span className="font-bold text-purple">{profile.location}</span>.
             </p>
             <p className="mt-3">
-              I am currently a Computer Science and Engineering student at B.P. Poddar Institute of
-              Management &amp; Technology, focused on Machine Learning, Deep Learning and Large
-              Language Models.
+              I am currently a Computer Science and Engineering student at B.P. Poddar Institute of Management &amp;
+              Technology, focused on Machine Learning, Deep Learning and Large Language Models.
             </p>
             <p className="mt-3">Apart from coding, some other activities that I love to do:</p>
             <ul className="mt-3 space-y-1.5">
@@ -57,7 +54,7 @@ function AboutPage() {
               ))}
             </ul>
             <blockquote className="mt-5 border-l-2 border-purple pl-4 italic text-purple">
-              &ldquo;Add your favorite quote here&rdquo;
+              &ldquo;My code has bugs. My curiosity doesn't.&rdquo;
               <footer className="mt-1 text-xs not-italic text-muted-foreground">— Author</footer>
             </blockquote>
           </div>
@@ -119,15 +116,10 @@ function AboutPage() {
           ))}
           <Reveal delay={0.24}>
             <div className="glass-card p-6">
-              <h3 className="text-sm font-bold uppercase tracking-wide text-purple">
-                Relevant coursework
-              </h3>
+              <h3 className="text-sm font-bold uppercase tracking-wide text-purple">Relevant coursework</h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 {coursework.map((c) => (
-                  <span
-                    key={c}
-                    className="rounded-full border border-purple/30 px-3 py-1 text-xs font-semibold"
-                  >
+                  <span key={c} className="rounded-full border border-purple/30 px-3 py-1 text-xs font-semibold">
                     {c}
                   </span>
                 ))}
@@ -141,9 +133,7 @@ function AboutPage() {
         <h2 className="text-3xl font-black">
           Skills &amp; <span className="text-gradient">tools</span>
         </h2>
-        <p className="mt-2 text-sm text-muted-foreground">
-          Hover or focus any skill to see where I&apos;ve used it.
-        </p>
+        <p className="mt-2 text-sm text-muted-foreground">Hover or focus any skill to see where I&apos;ve used it.</p>
       </Reveal>
       <div className="mt-8">
         <SkillGrid />
@@ -154,12 +144,8 @@ function AboutPage() {
           Days I <span className="text-gradient">code</span>
         </h2>
         <div className="glass-card mt-6 overflow-x-auto p-6">
-          <ClientOnly
-            fallback={<div className="h-32 w-full animate-pulse rounded-xl bg-purple/10" />}
-          >
-            <Suspense
-              fallback={<div className="h-32 w-full animate-pulse rounded-xl bg-purple/10" />}
-            >
+          <ClientOnly fallback={<div className="h-32 w-full animate-pulse rounded-xl bg-purple/10" />}>
+            <Suspense fallback={<div className="h-32 w-full animate-pulse rounded-xl bg-purple/10" />}>
               <GitHubCalendar username={profile.githubUser} colorScheme="dark" />
             </Suspense>
           </ClientOnly>
