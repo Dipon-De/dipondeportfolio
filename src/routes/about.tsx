@@ -1,5 +1,6 @@
 import { createFileRoute, ClientOnly } from "@tanstack/react-router";
 import { Suspense, lazy } from "react";
+import { AiOutlineFilePdf } from "react-icons/ai";
 import { ImPointRight } from "react-icons/im";
 import Tilt from "react-parallax-tilt";
 import avatar from "@/assets/about-avatar.png";
