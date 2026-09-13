@@ -7,7 +7,9 @@ import { PageSection, Reveal } from "@/components/Reveal";
 import { SkillGrid } from "@/components/SkillGrid";
 import { coursework, education, experience, profile } from "@/data/portfolio";
 
-const GitHubCalendar = lazy(() => import("react-github-calendar"));
+const GitHubCalendar = lazy(() =>
+  import("react-github-calendar").then((m) => ({ default: m.GitHubCalendar })),
+);
 
 export const Route = createFileRoute("/about")({
   head: () => ({
