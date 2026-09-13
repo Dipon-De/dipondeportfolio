@@ -10,6 +10,7 @@ A full rebuild of your portfolio with the same dark purple identity, modernized,
 - Short splash/preloader (~1.1s) before the page reveals.
 - Light mode toggle with an inverted, still purple-accented palette; dark is the default.
 - Reduced-motion setting disables particles and heavy animation.
+- Modern motion throughout: scroll-progress bar, fade-and-slide section reveals on scroll, animated page transitions between routes, staggered card entrances, magnetic/glow button hovers, animated gradient text on the hero, and count-up/fill animations on the skill meters.
 
 ## Pages
 
