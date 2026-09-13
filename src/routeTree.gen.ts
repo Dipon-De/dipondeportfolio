@@ -10,6 +10,8 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SplatRouteImport } from './routes/$'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as CertificationsRouteImport } from './routes/certifications'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as ResearchRouteImport } from './routes/research'
@@ -18,6 +20,16 @@ import { Route as ResumeRouteImport } from './routes/resume'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SplatRoute = SplatRouteImport.update({
+  id: '/$',
+  path: '/$',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CertificationsRoute = CertificationsRouteImport.update({
@@ -43,6 +55,8 @@ const ResumeRoute = ResumeRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
+  '/about': typeof AboutRoute
   '/certifications': typeof CertificationsRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
@@ -50,6 +64,8 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
+  '/about': typeof AboutRoute
   '/certifications': typeof CertificationsRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
@@ -58,6 +74,8 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/$': typeof SplatRoute
+  '/about': typeof AboutRoute
   '/certifications': typeof CertificationsRoute
   '/projects': typeof ProjectsRoute
   '/research': typeof ResearchRoute
@@ -65,15 +83,38 @@ export interface FileRoutesById {
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/certifications' | '/projects' | '/research' | '/resume'
+  fullPaths:
+    | '/'
+    | '/$'
+    | '/about'
+    | '/certifications'
+    | '/projects'
+    | '/research'
+    | '/resume'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/certifications' | '/projects' | '/research' | '/resume'
+  to:
+    | '/'
+    | '/$'
+    | '/about'
+    | '/certifications'
+    | '/projects'
+    | '/research'
+    | '/resume'
   id:
-    '__root__' | '/' | '/certifications' | '/projects' | '/research' | '/resume'
+    | '__root__'
+    | '/'
+    | '/$'
+    | '/about'
+    | '/certifications'
+    | '/projects'
+    | '/research'
+    | '/resume'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  SplatRoute: typeof SplatRoute
+  AboutRoute: typeof AboutRoute
   CertificationsRoute: typeof CertificationsRoute
   ProjectsRoute: typeof ProjectsRoute
   ResearchRoute: typeof ResearchRoute
@@ -87,6 +128,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/$': {
+      id: '/$'
+      path: '/$'
+      fullPath: '/$'
+      preLoaderRoute: typeof SplatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/certifications': {
@@ -122,6 +177,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  SplatRoute: SplatRoute,
+  AboutRoute: AboutRoute,
   CertificationsRoute: CertificationsRoute,
   ProjectsRoute: ProjectsRoute,
   ResearchRoute: ResearchRoute,
