@@ -64,6 +64,7 @@ export const experience = [
       "Improved model performance by 40% and cut VRAM usage by 75% through LoRA fine-tuning, enabling deployment on consumer-grade GPUs.",
       "Modified model configs for CPU compatibility (float32 precision in config.json) for broader hardware support.",
     ],
+    pdfs: [{ label: "Internship Certificate", url: "/assets/experience/nitttr-internship.pdf" }],
   },
   {
     role: "Training & Internship (part-time)",
@@ -72,6 +73,10 @@ export const experience = [
     points: [
       "Completed a full Machine Learning module covering supervised and unsupervised techniques.",
       "Hands-on data science workflows using Dataiku — analysis, visualization, platform integration.",
+    ],
+    pdfs: [
+      { label: "Machine Learning Certificate", url: "/assets/experience/machine-learning.pdf" },
+      { label: "Dataiku Certificate", url: "/assets/experience/dataiku.pdf" },
     ],
   },
 ];
@@ -160,30 +165,35 @@ export const certifications = [
     issuer: "Oracle",
     date: "Aug 2025",
     verify: "#",
+    pdf: "/assets/certs/generative-ai.pdf",
   },
   {
     title: "Oracle Cloud Infrastructure 2025 Certified Developer Professional",
     issuer: "Oracle",
     date: "Aug 2025",
     verify: "#",
+    pdf: "/assets/certs/developer.pdf",
   },
   {
     title: "Oracle Cloud Infrastructure 2025 Certified Data Science Professional",
     issuer: "Oracle",
     date: "Sept 2025",
     verify: "#",
+    pdf: "/assets/certs/data-science.pdf",
   },
   {
     title: "Oracle Cloud Infrastructure 2025 Certified Networking Professional",
     issuer: "Oracle",
     date: "Sept 2025",
     verify: "#",
+    pdf: "/assets/certs/networking.pdf",
   },
   {
     title: "Oracle AI Vector Search Certified Professional",
     issuer: "Oracle",
     date: "Sept 2025",
     verify: "#",
+    pdf: "/assets/certs/ai-vector-search.pdf",
   },
 ];
 
