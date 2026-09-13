@@ -1,0 +1,23 @@
+{
+  "name": "Dipon De — Machine Learning & LLM Engineer",
+  "short_name": "Dipon De",
+  "description": "Portfolio of Dipon De: machine learning, deep learning and LLM engineering projects.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#110f1a",
+  "theme_color": "#c770f0",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
