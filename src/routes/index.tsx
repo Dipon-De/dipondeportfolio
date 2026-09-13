@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin /*, AiFillInstagram */ } from "react-icons/ai";
 import Tilt from "react-parallax-tilt";
 import heroImage from "@/assets/hero-illustration.png";
 import { PageSection, Reveal } from "@/components/Reveal";
@@ -182,6 +182,7 @@ function Home() {
           >
             <AiFillLinkedin aria-hidden />
           </a>
+          {/*
           <a
             href={profile.instagram}
             target="_blank"
@@ -191,6 +192,7 @@ function Home() {
           >
             <AiFillInstagram aria-hidden />
           </a>
+          */}
         </div>
       </Reveal>
     </PageSection>

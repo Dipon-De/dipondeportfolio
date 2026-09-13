@@ -6,12 +6,12 @@ import bitcoinImg from "@/assets/project-bitcoin.jpg";
 export const profile = {
   name: "Dipon De",
   location: "Kolkata, India",
-  email: "iamdiponde@gmail.com",
-  phone: "+91-8016829344",
+  // email: "iamdiponde@gmail.com",
+  // phone: "+91-8016829344",
   github: "https://github.com/Dipon-De",
   githubUser: "Dipon-De",
   linkedin: "https://www.linkedin.com/in/dipon-de-2a9570256/",
-  instagram: "https://www.instagram.com/",
+  // instagram: "https://www.instagram.com/",
   roles: [
     "Machine Learning Engineer",
     "Deep Learning Engineer",
