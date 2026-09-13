@@ -10,6 +10,7 @@ A full rebuild of your portfolio with the same dark purple identity, modernized,
 - Short splash/preloader (~1.1s) before the page reveals.
 - Light mode toggle with an inverted, still purple-accented palette; dark is the default.
 - Reduced-motion setting disables particles and heavy animation.
+- Modern motion throughout: scroll-progress bar, fade-and-slide section reveals on scroll, animated page transitions between routes, staggered card entrances, magnetic/glow button hovers, animated gradient text on the hero, and count-up/fill animations on the skill meters.
 
 ## Pages
 
@@ -38,7 +39,7 @@ Exactly the identity, summary, education, experience, projects, publications, ce
 - Routing uses TanStack Router instead of React Router (fixed on this stack); route paths are identical to your spec. Unknown paths render the themed 404.
 - SEO via each route's own `head()` (title, description, OG, Twitter) instead of react-helmet; plus `robots.txt`, `sitemap.xml`, PWA `manifest.json` with real name/icons and theme color.
 - Browser-only libraries (particles, PDF viewer, GitHub calendar) are loaded client-side after hydration so they never block first paint.
-- Deployment: `README.md` with steps for Vercel, Netlify, Cloudflare Pages and Lovable publish. GitHub Pages is not covered — this stack's build is not a plain static `dist/` folder, so a pure static host is out of scope.
+- Deployment: works on Vercel and Netlify from a Git import, plus Cloudflare Pages and Lovable publish. I add the matching config files (`vercel.json`, `netlify.toml`) and a `README.md` with step-by-step instructions and the env-var setup for each. GitHub Pages is not covered — it only serves plain static files and this build is not one.
 - Responsive checks at 375px, 768px and 1280px; semantic landmarks, alt text, visible focus states.
 
 ## Build order
