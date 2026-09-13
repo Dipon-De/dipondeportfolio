@@ -55,7 +55,7 @@ function AboutPage() {
             </ul>
             <blockquote className="mt-5 border-l-2 border-purple pl-4 italic text-purple">
               &ldquo; My code has bugs. My curiosity doesn't. &rdquo;
-              <footer className="mt-1 text-xs not-italic text-muted-foreground">— Author</footer>
+              <footer className="mt-1 text-xs not-italic text-muted-foreground">— DEV</footer>
             </blockquote>
           </div>
         </Reveal>
